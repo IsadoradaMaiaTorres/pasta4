@@ -13,13 +13,15 @@ body {
 }
 
 .secao {
-  min-height: 100vh; // ViewPort Height // Altura máxima da área de vibilidade
+  min-height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
 
   &.inicio {
     background-color: red;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f3/Earth_flag_PD.jpg");
+    background-size: cover;
   }
   &.sobre {
     background-color: blue;
