@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 body {
   font-family: sans-serif;
   margin: 0;
@@ -5,10 +6,14 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1140px;
   border: 1px solid red;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .secao {
@@ -19,18 +24,39 @@ body {
 }
 .secao.inicio {
   background-color: red;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f3/Earth_flag_PD.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .secao.sobre {
   background-color: blue;
+  background-image: url("https://th.bing.com/th/id/R.6ed7f24eb793e97a94e9fc4c034b66c0?rik=sLWf7OZPgSpb1w&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
 }
 .secao.atividades {
   background-color: black;
 }
 
+h1,
+h2 {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.no-topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 .menu {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
   justify-content: space-between;
 }
@@ -38,4 +64,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}/*# sourceMappingURL=styles.css.map */
+}
+.menu li a {
+  text-decoration: none;
+  color: #006663;
+}
+.menu li a:hover {
+  color: #ff6b1a;
+}
